@@ -1,0 +1,24 @@
+POST http://localhost:3000/employee/new HTTP/1.1
+content-type: application/json
+
+{
+    "name": "John Danny",
+    "gender": "female",
+    "email": "apple@gmail.com"
+}
+
+###
+GET http://localhost:3000/employee/all HTTP/1.1
+
+###
+PATCH http://localhost:3000/employee/6278ea741547744c11e30e33 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Jane Danny",
+    "gender": "male",
+    "email": "Changed@email"
+}
+
+###
+DELETE http://localhost:3000/employee/6278ea741547744c11e30e33 HTTP/1.1
